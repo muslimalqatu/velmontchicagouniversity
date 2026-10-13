@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Velmont Chicago University is a proposed online university currently in development, focused on practical learning and responsible AI integration.">
+  <meta name="theme-color" content="#00182f">
+  <title>Velmont Chicago University | Prototype</title>
+  <link rel="icon" href="assets/icons/favicon.ico" sizes="any">
+  <link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <div id="site-header-slot"></div>
+
+  <main id="main-content" tabindex="-1">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <p id="hero-eyebrow" class="hero-eyebrow"></p>
+          <h1 id="hero-title"></h1>
+          <p id="hero-body" class="hero-lede"></p>
+          <div class="hero-actions">
+            <a class="btn btn--primary" href="programs.html">Explore Programs <span aria-hidden="true">→</span></a>
+            <a class="btn btn--secondary" data-coming-soon="Ask Velmont" href="coming-soon.html">Ask Velmont</a>
+          </div>
+          <p class="hero-note"><span aria-hidden="true">◆</span><span>Proposed programs and university services remain subject to academic review, required approvals and launch readiness.</span></p>
+        </div>
+
+        <aside class="hero-panel reveal" aria-label="Student planning concept">
+          <div class="hero-panel-brand">
+            <img src="assets/brand/velmont-emblem.webp" alt="" aria-hidden="true">
+            <div><strong>Your path should be clear</strong><span>Student decision journey</span></div>
+          </div>
+          <h2>Know what matters before you decide.</h2>
+          <ol class="path-list">
+            <li><span>01</span><strong>Choose your academic direction</strong></li>
+            <li><span>02</span><strong>Review previous learning</strong></li>
+            <li><span>03</span><strong>Understand time and cost</strong></li>
+            <li><span>04</span><strong>Talk through your plan with a person</strong></li>
+          </ol>
+        </aside>
+      </div>
+    </section>
+
+    <section id="programs" class="section section--warm" aria-labelledby="programs-title">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="section-kicker">Explore academics</span>
+          <h2 id="programs-title">Start with the direction you want to grow.</h2>
+          <p id="portfolio-intro"></p>
+        </div>
+        <div class="discovery-tabs reveal" aria-label="Program level status">
+          <span class="discovery-pill"><span class="level-label" data-content="academicPortfolio.undergraduate.label"></span> <span data-content="academicPortfolio.undergraduate.status"></span></span>
+          <span class="discovery-pill"><span class="level-label" data-content="academicPortfolio.graduate.label"></span> <span data-content="academicPortfolio.graduate.status"></span></span>
+        </div>
+        <div id="program-grid" class="program-grid reveal"></div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="decision-title">
+      <div class="container decision-wrap">
+        <div class="decision-intro reveal">
+          <span class="section-kicker">Guided planning</span>
+          <h2 id="decision-title">Four answers should never be hard to find.</h2>
+          <p>Velmont's proposed student journey puts practical decision information beside the program—not behind a form or buried in long pages.</p>
+          <a class="text-link" data-coming-soon="Time and Cost planning" href="coming-soon.html">See how planning will work <span aria-hidden="true">→</span></a>
+        </div>
+        <div id="decision-grid" class="decision-grid reveal"></div>
+      </div>
+    </section>
+
+    <section class="section section--cool" aria-labelledby="academic-model-title">
+      <div class="container model-grid">
+        <div class="model-copy reveal">
+          <span class="section-kicker">Why Velmont</span>
+          <h2 id="academic-model-title"></h2>
+          <p id="academic-model-body"></p>
+          <a class="btn btn--secondary" data-coming-soon="Academic Model" href="coming-soon.html">Explore the academic model</a>
+        </div>
+        <div id="principles-grid" class="principles-grid reveal"></div>
+      </div>
+    </section>
+
+    <section class="section ai-section" aria-labelledby="ai-title">
+      <div class="container ai-grid">
+        <div class="ai-copy reveal">
+          <span id="ai-label" class="section-kicker">Learning in action</span>
+          <h2 id="ai-title"></h2>
+          <p id="ai-body"></p>
+          <a class="btn btn--gold" data-coming-soon="Ask Velmont" href="coming-soon.html">Preview Ask Velmont <span aria-hidden="true">→</span></a>
+          <p class="ai-disclaimer">Ask Velmont is planned as an information and guidance experience. Individual academic, funding and recognition decisions require appropriate human review.</p>
+        </div>
+        <div id="learning-examples" class="learning-examples reveal"></div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="student-paths-title">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="section-kicker">One university, clearer local guidance</span>
+          <h2 id="student-paths-title">Information shaped around where you plan to study and use your degree.</h2>
+          <p>Velmont's future guidance is intended to help students understand the details that differ by location without splitting the experience into unrelated portals.</p>
+        </div>
+        <div class="student-paths reveal">
+          <article class="student-card">
+            <span class="student-card-label">United States</span>
+            <h3 id="local-title"></h3>
+            <p id="local-body"></p>
+            <a class="text-link" data-coming-soon="Local Students" href="coming-soon.html">Local student information <span aria-hidden="true">→</span></a>
+          </article>
+          <article class="student-card">
+            <span class="student-card-label">International</span>
+            <h3 id="international-title"></h3>
+            <p id="international-body"></p>
+            <a class="text-link" data-coming-soon="International Students" href="coming-soon.html">International student information <span aria-hidden="true">→</span></a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--warm" aria-labelledby="support-title">
+      <div class="container reveal">
+        <div class="support-panel">
+          <div class="support-copy">
+            <span class="section-kicker">Human support</span>
+            <h2 id="support-title"></h2>
+            <p id="support-body"></p>
+          </div>
+          <div class="support-side">
+            <h3>Planned support areas</h3>
+            <ul id="support-list" class="support-list"></ul>
+            <a class="btn btn--gold support-contact" data-coming-soon="Contact" href="coming-soon.html">Talk to a Person</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="roadmap-title">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="section-kicker">Development roadmap</span>
+          <h2 id="roadmap-title">Building toward readiness, one verified step at a time.</h2>
+          <p>These dates are planning targets, not regulatory commitments. If approvals or readiness change, the timeline will change with them.</p>
+        </div>
+        <ol id="roadmap-list" class="roadmap-list reveal"></ol>
+      </div>
+    </section>
+
+    <section class="section mission-band" aria-label="Proposed mission">
+      <div class="container reveal">
+        <img src="assets/brand/velmont-emblem.webp" alt="Velmont Chicago University shield emblem">
+        <blockquote>
+          <p id="mission-preview"></p>
+          <cite>Proposed mission — for governing-board and academic review</cite>
+        </blockquote>
+      </div>
+    </section>
+
+    <section class="section final-cta" aria-labelledby="final-cta-title">
+      <div class="container reveal">
+        <div class="cta-panel">
+          <div>
+            <h2 id="final-cta-title">Explore the idea. Ask the next question.</h2>
+            <p>Velmont is still in development. Learn about the proposed academic direction, or use the prototype pathways to see how future students could find answers quickly.</p>
+          </div>
+          <div class="cta-actions">
+            <a class="btn btn--primary" href="programs.html">Explore Programs</a>
+            <a class="btn btn--secondary" data-coming-soon="Ask Velmont" href="coming-soon.html">Ask Velmont</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="site-footer-slot"></div>
+
+  <noscript><p class="container">Enable JavaScript to view the prototype content and navigation.</p></noscript>
+  <script src="js/content.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
