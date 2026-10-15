@@ -38,7 +38,6 @@
 
       <div class="header-actions">
         <a class="utility-link" data-coming-soon="Search" href="coming-soon.html">Search</a>
-        <a class="utility-link" data-coming-soon="Ask Velmont" href="coming-soon.html">Ask Velmont</a>
         <a class="btn btn--primary" href="programs.html">Explore Programs</a>
         <button id="menu-toggle" class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open navigation menu"><span></span></button>
       </div>
@@ -49,7 +48,6 @@
     <div id="mobile-nav-groups"></div>
     <div class="mobile-menu-actions">
       <a class="btn btn--primary" href="programs.html">Explore Programs</a>
-      <a class="btn btn--secondary" data-coming-soon="Ask Velmont" href="coming-soon.html">Ask Velmont</a>
       <a class="btn btn--secondary" data-coming-soon="Search" href="coming-soon.html">Search</a>
       <a class="btn btn--secondary" data-coming-soon="Contact" href="coming-soon.html">Talk to a Person</a>
     </div>
@@ -332,6 +330,25 @@
     });
   }
 
+  function initBotpressWebchat() {
+  if (document.querySelector('script[data-botpress-webchat="inject"]')) return;
+
+  const injectScript = document.createElement("script");
+  injectScript.src = "https://cdn.botpress.cloud/webchat/v3.7/inject.js";
+  injectScript.setAttribute("data-botpress-webchat", "inject");
+
+  injectScript.onload = () => {
+    if (document.querySelector('script[data-botpress-webchat="config"]')) return;
+
+    const configScript = document.createElement("script");
+    configScript.src = "https://files.bpcontent.cloud/2026/10/14/20/20261014203108-LYY36KW1.js";
+    configScript.setAttribute("data-botpress-webchat", "config");
+
+    document.head.appendChild(configScript);
+  };
+
+  document.head.appendChild(injectScript);
+}
   window.VELMONT_UI = { escapeHTML, route };
   renderChrome();
   renderNavigation();
@@ -342,10 +359,10 @@
   renderRoadmap();
   hydrateText();
   initDesktopMenus();
-  initMobileMenu();
   initHeaderScroll();
   initReveal();
   initTemporaryActions();
+  initBotpressWebchat();
   qsa(".nav-menu a, .mobile-nav-links a").forEach(link => {
     if (link.getAttribute("href") === location.pathname.split("/").pop() + location.search + location.hash) {
       link.setAttribute("aria-current", "page");
